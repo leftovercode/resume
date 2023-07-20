@@ -1,0 +1,255 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jason Perez} \\ \vspace{1pt}
+    \href{mailto:jasonper@andrew.cmu.edu}{\underline{jasonper@andrew.cmu.edu}} $|$ 
+    \small 210-929-2798 $|$
+    \href{https://www.linkedin.com/in/jason-perez-a494731b1}{LinkedIn} $|$
+    \href{https://www.leftovercode.xyz}{\underline{www.leftovercode.xyz}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Carnegie Mellon University}{GPA: 3.54/4.0}
+        {Bachelor of Science in Information Systems, Minor in Computer Science}{Aug. 2020 -- May 2024}
+    \resumeSubHeadingListEnd
+
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Cisco Systems}{Digital Enterprise Solutions}
+        {Software Engineering Intern}{May 2023 -- Aug 2023}
+            \resumeItemListStart
+                \resumeItem{Developed data ingestion monitoring framework that generates and sends reports to administrators}
+                \resumeItem{Created Python program that measured data ingestion progress between Oracle and Snowflake databases}
+                \resumeItem{Reduced time spent on manual queries and execution by 90\%}
+            \resumeItemListEnd
+        \resumeSubSubheading
+        {Business Analyst Intern}{May 2022 -- Aug 2022}
+            \resumeItemListStart
+                \resumeItem{Joined the supply chain department's Install Base and Entitlement Base teams}
+                \resumeItem{Created archive procedure within Snowflake that reduced compute cost of data merge operations by up to 80\%}
+                \resumeItem{Developed archive framework that allows users to set up archive cycles for tables within Snowflake}
+            \resumeItemListEnd
+        \resumeSubheading
+        {Carnegie Mellon University}{Computing Services}
+        {Technology Enhanced Facilities Manager}{Aug. 2022 -- Present}
+            \resumeItemListStart
+                \resumeItem{Managed four employees by leading training sessions that led to improved work performance}
+                \resumeItem{Facilitated use of computer labs by informing users of available features and troubleshooting issues with equipment}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+% Personal Site
+%      \resumeProjectHeading
+%          {\textbf{Leftovercode.xyz} $|$ \emph{HTML, CSS, Javascript, Debian, Git}}{Dec. 2020 -- Present}
+%          \resumeItemListStart
+%            \resumeItem{Launched a website that serves as my learning space for web development and projects}
+%            \resumeItem{Integrated PDFObject to the website to make my resume more accessible and presentable}
+%            \resumeItem{Learned how to manage a VPS and navigate the Debian Linux distribution}
+%            \resumeItem{Learned the basics of git to make updating website easier}
+%          \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{Protect Penn-Trafford Impeachment Resource Database} $|$ \emph{Ruby on Rails, SQL, CSS}}{Jan. 2023 - May 2023}
+            \resumeItemListStart
+                \resumeItem{Developed a web application for data entry and retrieval to facilitate building impeachment cases}
+                \resumeItem{Collaborated with the organization's community advocate to define an entity relationship diagram for their data}
+                \resumeItem{Designed and presented high fidelity wire frames to client based on requirements}
+            \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{Great Pittsburgh Baking Outlet} $|$ \emph{Ruby on Rails, SQL, HTML}}{Jan. 2022 - May 2022}
+            \resumeItemListStart
+                \resumeItem{Designed and developed a prototype of an e-commerce web application as part of a course narrative}
+                \resumeItem{Learned how to use the Model-View-Controller pattern to develop software applications}
+                \resumeItem{Gained an understanding on how to use data analytics and visualizations to make smarter and informative applications}
+            \resumeItemListEnd
+%      \resumeProjectHeading
+%          {\textbf{New Super Asteroids} $|$ \emph{Python}}{April 2021 - May 2021}
+%          \resumeItemListStart
+%           \resumeItem{Created an Asteroids style game with updated game mechanics}
+%            \resumeItem{Learned how to implement game design concepts through OOP and developed better programming practices}
+%          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Academic Achievements and Memberships}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {MIT Online Science, Technology, and Engineering Community (MOSTEC)}{June 2019 -- Dec. 2020}
+        {Student}{}
+            \resumeItemListStart
+                \resumeItem{Completed Mobile App Development and Science Writing courses with a final project presented at MIT’s campus}
+                \resumeItem{Developed an app that kept track of medications with an easy to use interface for the elderly}
+                \resumeItem{Learned the importance of making scientific information easily understood by the general public}
+                \resumeItem{Wrote an article about AI in game development that was selected as one of the best articles from the program}
+            \resumeItemListEnd
+
+        \resumeSubheading
+        {Google Computer Science Summer Institute}{July 2020 -- Aug. 2020}{Student}{}
+            \resumeItemListStart
+                \resumeItem{4-week introduction to CS with JavaScript, specifically the p5.js library, that culminated into “New Asteroids"}
+                \resumeItem{Designed core game mechanics and  programmed physics for “New Asteroids" video game project}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technology Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+            \textbf{Programming Languages: }{Python, C, SML, SQL, HTML, CSS, Ruby} \\
+            \textbf{Applications: }{Git, Vim, VSCode, PyCharm, nginx} \\
+            \textbf{Databases: }{Postgres, MongoDB, MySQL} \\
+            \textbf{Hardware: }{Raspberry Pi 4, Raspberry Pi Pico} \\
+            \textbf{OS: }{Linux, Debian, Windows, Android}
+        }}
+    \end{itemize}
+
+%     \textbf{Python}{\hspace{250pt}Fundamentals of Programming and Computer Science} \\
+%     \textbf{HTML, CSS, Javascript, MySQL}{\hspace{232pt}Information Systems Milieux} \\
+%     \textbf{C}{\hspace{352pt}Principles of Imperative Computation}\\
+%     \textbf{SQL, MongoDB}{\hspace{292pt}Database Design and Development}\\
+%     \textbf{SML}{\hspace{335pt}Principles of Functional Programming}\\
+%     \textbf{Ruby on Rails, Git}{\hspace{270pt}Application Design and Development}\\
+%-----------AWARDS------------------------
+% \section{Awards}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%    \small{\item{
+%    \textbf{Spring 2021 CMU Dietrich College Dean's List with High Honors} \\
+%     \textbf{Fall 2020 CMU Dietrich College Dean’s List with Honors} \\
+%     \textbf{College Board – National Hispanic Scholar} \\
+%     \textbf{SoHacks 6 – Best Intermediate Hack Winner} \\
+%    }}
+% \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
